@@ -1,6 +1,6 @@
 {
-  "name": "blog.wkoury.com",
-  "version": "0.1.0",
+  "name": "wkoury.com",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
