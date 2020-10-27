@@ -17,13 +17,6 @@
   font-size: 4rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .container {
-    background: #1b1b1b;
-    color: white;
-  }
-}
-
 @media all and (max-width: 750px) {
   .main {
     width: 100%;
