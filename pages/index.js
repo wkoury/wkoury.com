@@ -6,6 +6,8 @@ export default function Index() {
     <div className={styles.container}>
       <Head>
         <title>Will Koury</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Computer science undergraduate student" />
       </Head>
       
       <main className={styles.main}>
