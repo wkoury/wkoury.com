@@ -23,10 +23,8 @@ export default function Index() {
             Tossup</a> and
             the <a href="https://wkoury.github.io/harvard-admissions/" rel="noopener noreferrer" target="_blank">Harvard
             Admissions Calculator</a>.
-    </p>
-        <p>I am on <a href="mailto:wkoury@hey.com">Email</a>, <a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">GitHub</a>, and <a
-        href="https://www.linkedin.com/in/will-koury-9b0241188/" rel="noopener noreferrer" target="_blank">LinkedIn</a>.
-    </p>
+        </p>
+        <p>Reach out to me via <a href="mailto:wkoury@hey.com">Email</a> & <a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">GitHub</a>.</p>
       </main>
     </div>
   )
