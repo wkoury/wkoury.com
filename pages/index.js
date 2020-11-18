@@ -24,8 +24,8 @@ export default function Index() {
             the <a href="https://wkoury.github.io/harvard-admissions/" rel="noopener noreferrer" target="_blank">Harvard
             Admissions Calculator</a>.
         </p>
-        <p>Reach out to me via <a href="mailto:wkoury@hey.com">Email</a> & <a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">GitHub</a>.</p>
+        <p>I am on <a href="mailto:wkoury@hey.com">Email</a> & <a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">GitHub</a>.</p>
       </main>
     </div>
-  )
+  );
 }
