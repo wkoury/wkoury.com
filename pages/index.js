@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Index() {
@@ -17,12 +16,9 @@ export default function Index() {
             Will Koury
           </h1>
           <div className={styles.profile}>
-            <Image 
+            <img
               src="/me.jpeg"
               alt="Will Koury"
-              width={110}
-              height={109.24592}
-              layout="fixed"
             />
           </div>
         </div>
