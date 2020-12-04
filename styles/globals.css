@@ -7,7 +7,7 @@ body {
 }
 
 a, a:visited {
-  color: red;
+  color: blue;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -9,12 +9,33 @@
   width: 70%;
   padding: 5rem 0;
   margin: 10px auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .title {
+  display: flex;
+  flex-direction: row;
+  vertical-align: bottom;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+.profile {
+  padding: 60px;
+  pointer-events: none;
+}
+
+.profile img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 150%; 
+  margin: 0 0 0 -20%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; 
 }
 
 @media all and (max-width: 750px) {
