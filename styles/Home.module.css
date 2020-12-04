@@ -37,6 +37,16 @@
   border-radius: 50%; 
 }
 
+.contact {
+  padding-top: 40px;
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+.contact a, .contact a:visited {
+  text-decoration: none;
+}
+
 @media all and (max-width: 1000px) {
   .main {
     width: 90%;

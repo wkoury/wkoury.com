@@ -32,14 +32,15 @@ export default function Index() {
             the <a href="https://wkoury.github.io/harvard-admissions/" rel="noopener noreferrer" target="_blank">Harvard
             Admissions Calculator</a>.
         </p>
-        <h3>Contact Me</h3>
-        <span>
-          <a href="mailto:wkoury@hey.com">📧</a>
-          {" • "}
-          <a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">💾</a>
-          {" • "}
-          <a href="https://twitter.com/will_koury" rel="noopener noreferrer" target="_blank">🐦</a>
-        </span>
+        <div className={styles.contact}>
+          <span>
+            <a href="mailto:wkoury@hey.com">📧</a>
+            {" • "}
+            <a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">💾</a>
+            {" • "}
+            <a href="https://twitter.com/will_koury" rel="noopener noreferrer" target="_blank">🐦</a>
+          </span>
+        </div>
       </main>
     </div>
   );
