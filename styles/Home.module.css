@@ -20,7 +20,7 @@
 }
 
 .profile {
-  padding: 60px;
+  padding: 67px 67px 0px 67px;
   pointer-events: none;
 }
 
@@ -39,11 +39,16 @@
 
 @media all and (max-width: 1000px) {
   .main {
-    width: 100%;
+    width: 90%;
     margin: 10px auto;
+    overflow: hidden;
   }
 
   .title {
     font-size: 2rem;
+  }
+
+  .profile {
+    padding: 50px 50px 0px 50px;
   }
 }
