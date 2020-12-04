@@ -27,7 +27,7 @@ export default function Index() {
           </div>
         </div>
 
-        <p>I am a software developer & computer science undergraduate student.</p>
+        <p>Software developer & computer science undergraduate student.</p>
         <p>My work includes <a 
             href="https://www.tossupapp.com/" 
             rel="noopener noreferrer" 
@@ -37,7 +37,13 @@ export default function Index() {
             Admissions Calculator</a>.
         </p>
         <h3>Contact Me</h3>
-        <p>I am on <a href="mailto:wkoury@hey.com">Email</a> & <a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">GitHub</a>.</p>
+        <span>
+          <a href="mailto:wkoury@hey.com">📧</a>
+          {" • "}
+          <a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">💾</a>
+          {" • "}
+          <a href="https://twitter.com/will_koury" rel="noopener noreferrer" target="_blank">🐦</a>
+        </span>
       </main>
     </div>
   );
