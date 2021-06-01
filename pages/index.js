@@ -20,7 +20,7 @@ export default function Index() {
 				<div className={styles.title}>
 					<h1>
 						Will Koury
-          </h1>
+					</h1>
 					<div className={styles.profile}>
 						<img
 							src="/me.jpeg"
@@ -36,9 +36,9 @@ export default function Index() {
 					rel="noopener noreferrer"
 					target="_blank">
 					Tossup</a> and
-            the <a href="https://wkoury.github.io/harvard-admissions/" rel="noopener noreferrer" target="_blank">Harvard
-            Admissions Calculator</a>.
-        </p>
+					the <a href="https://wkoury.github.io/harvard-admissions/" rel="noopener noreferrer" target="_blank">Harvard
+					Admissions Calculator</a>.
+				</p>
 				<div className={styles.contact}>
 					<span>
 						<a href="mailto:wkoury@hey.com">📧</a>
