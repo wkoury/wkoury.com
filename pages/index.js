@@ -12,7 +12,7 @@ export default function Index() {
 			<Head>
 				<title>Will Koury</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<meta name="description" content="Computer science undergraduate student" />
+				<meta name="description" content="Software developer & computer science student" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
@@ -39,13 +39,17 @@ export default function Index() {
 					the <a href="https://wkoury.github.io/harvard-admissions/" rel="noopener noreferrer" target="_blank">Harvard
 					Admissions Calculator</a>.
 				</p>
+				<p>I also helped to build <a
+						href="https://www.ftqapp.com"
+						rel="noopener noreferrer"
+						target="_blank"
+					>FTQ</a>, a SaaS for assembly-line product inspection & analysis.</p>
+				<p>Let's get in touch:</p>
 				<div className={styles.contact}>
 					<span>
-						<a href="mailto:wkoury@hey.com">📧</a>
+						<a href="mailto:wkoury@hey.com">Email</a>
 						{" • "}
-						<a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">💾</a>
-						{" • "}
-						<a href="https://twitter.com/will_koury" rel="noopener noreferrer" target="_blank">🐦</a>
+						<a href="https://github.com/wkoury" rel="noopener noreferrer" target="_blank">Github</a>
 					</span>
 				</div>
 			</main>
