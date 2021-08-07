@@ -13,7 +13,6 @@ export default function Index() {
 				<title>Will Koury</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<meta name="description" content="Software developer & computer science student" />
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
 			<main className={styles.main}>
@@ -23,7 +22,7 @@ export default function Index() {
 					</h1>
 					<div className={styles.profile}>
 						<img
-							src="/me.jpeg"
+							src="https://www.github.com/wkoury.png"
 							alt="Will Koury"
 							loading="lazy"
 						/>
@@ -31,7 +30,12 @@ export default function Index() {
 				</div>
 
 				<p>Software developer & computer science undergraduate student.</p>
-				<p>My work includes <a
+				<p>I was on a team of 2 building <a
+						href="https://www.ftqapp.com"
+						rel="noopener noreferrer"
+						target="_blank"
+					>FTQ</a>, a SaaS for assembly-line product inspection & analysis.</p>
+				<p>My personal work includes <a
 					href="https://www.tossupapp.com/"
 					rel="noopener noreferrer"
 					target="_blank">
@@ -39,13 +43,8 @@ export default function Index() {
 					the <a href="https://wkoury.github.io/harvard-admissions/" rel="noopener noreferrer" target="_blank">Harvard
 					Admissions Calculator</a>.
 				</p>
-				<p>I also helped to build <a
-						href="https://www.ftqapp.com"
-						rel="noopener noreferrer"
-						target="_blank"
-					>FTQ</a>, a SaaS for assembly-line product inspection & analysis.</p>
-				<p>Let's get in touch:</p>
 				<div className={styles.contact}>
+					Let's get in touch: {'\t'}
 					<span>
 						<a href="mailto:wkoury@hey.com">Email</a>
 						{" • "}
