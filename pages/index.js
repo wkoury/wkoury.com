@@ -12,7 +12,7 @@ export default function Index() {
 			<Head>
 				<title>Will Koury</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<meta name="description" content="Software developer & computer science student" />
+				<meta name="description" content="Software engineer Will Koury" />
 			</Head>
 
 			<main className={styles.main}>
@@ -29,7 +29,7 @@ export default function Index() {
 					</div>
 				</div>
 
-				<p>Software developer & computer science undergraduate student.</p>
+				<p>Software engineer @ <a href="https://www.flightaware.com" rel="noopener noreferrer" target="_blank">FlightAware</a>.</p>
 				<p>I was on a team of 2 building <a
 						href="https://www.ftqapp.com"
 						rel="noopener noreferrer"
