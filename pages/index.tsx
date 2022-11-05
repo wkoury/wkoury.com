@@ -1,12 +1,9 @@
-import { useEffect } from "react";
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
-export default function Index() {
-	useEffect(() => {
-		document.documentElement.lang = "en-us";
-	});
-
+const Index: NextPage = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -21,20 +18,22 @@ export default function Index() {
 						Will Koury
 					</h1>
 					<div className={styles.profile}>
-						<img
-							src="https://www.github.com/wkoury.png"
+						<Image
+							src="/profile.jpg"
 							alt="Will Koury"
+							width={110}
+							height={110}
 							loading="lazy"
 						/>
 					</div>
 				</div>
 
 				<p>Software engineer @ <a href="https://www.flightaware.com" rel="noopener noreferrer" target="_blank">FlightAware</a>.</p>
-				<p>I was on a team of 2 building <a
+				<p>I am on a team of 2 building <a
 						href="https://www.ftqapp.com"
 						rel="noopener noreferrer"
 						target="_blank"
-					>FTQ</a>, a SaaS for assembly-line product inspection & analysis.</p>
+					>First Time Quality</a>, a SaaS for assembly-line product inspection & analysis.</p>
 				<p>My personal work includes <a
 					href="https://www.tossupapp.com/"
 					rel="noopener noreferrer"
@@ -44,7 +43,7 @@ export default function Index() {
 					Admissions Calculator</a>.
 				</p>
 				<div className={styles.contact}>
-					Let's get in touch: {'\t'}
+					Let&apos;s get in touch: {'\t'}
 					<span>
 						<a href="mailto:wkoury@hey.com">Email</a>
 						{" • "}
@@ -55,3 +54,5 @@ export default function Index() {
 		</div>
 	);
 }
+
+export default Index;
