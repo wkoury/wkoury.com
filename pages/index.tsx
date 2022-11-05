@@ -35,7 +35,7 @@ const Index: NextPage = () => {
 						target="_blank"
 					>First Time Quality</a>, a SaaS for assembly-line product inspection & analysis.</p>
 				<p>My personal work includes <a
-					href="https://www.tossupapp.com/"
+					href="https://github.com/wkoury/tossup-app"
 					rel="noopener noreferrer"
 					target="_blank">
 					Tossup</a> and
