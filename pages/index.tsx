@@ -23,24 +23,23 @@ const Index: NextPage = () => {
 							alt="Will Koury"
 							width={110}
 							height={110}
-							loading="lazy"
 						/>
 					</div>
 				</div>
 
 				<p>Software engineer @ <a href="https://www.flightaware.com" rel="noopener noreferrer" target="_blank">FlightAware</a>.</p>
 				<p>I am on a team of 2 building <a
-						href="https://www.ftqapp.com"
-						rel="noopener noreferrer"
-						target="_blank"
-					>First Time Quality</a>, a SaaS for assembly-line product inspection & analysis.</p>
+					href="https://www.ftqapp.com"
+					rel="noopener noreferrer"
+					target="_blank"
+				>First Time Quality</a>, a SaaS for assembly-line product inspection & analysis.</p>
 				<p>My personal work includes <a
 					href="https://github.com/wkoury/tossup-app"
 					rel="noopener noreferrer"
 					target="_blank">
 					Tossup</a> and
 					the <a href="https://wkoury.github.io/harvard-admissions/" rel="noopener noreferrer" target="_blank">Harvard
-					Admissions Calculator</a>.
+						Admissions Calculator</a>.
 				</p>
 				<div className={styles.contact}>
 					Let&apos;s get in touch: {'\t'}
