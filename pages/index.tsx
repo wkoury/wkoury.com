@@ -28,7 +28,7 @@ const Index: NextPage = () => {
 				</div>
 
 				<p>Software engineer @ <a href="https://www.flightaware.com" rel="noopener noreferrer" target="_blank">FlightAware</a>.</p>
-				<p>I am on a team of 2 building <a
+				<p>I am on a team of 3 building <a
 					href="https://www.ftqapp.com"
 					rel="noopener noreferrer"
 					target="_blank"
