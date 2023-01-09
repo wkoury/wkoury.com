@@ -11,6 +11,14 @@ a, a:visited {
 	color: blue;
 }
 
+.atropos-scale {
+  pointer-events: none;
+}
+
+.atropos-rotate {
+  pointer-events: all;
+}
+
 @media (prefers-color-scheme: dark) {
 	html, body {
 		background: #1b1b1b;
