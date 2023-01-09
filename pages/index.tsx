@@ -18,6 +18,7 @@ const Index: NextPage = () => {
         <Atropos
           className='my-atropos'
           shadow={false}
+          highlight={false}
           activeOffset={15}
           duration={500}
           rotateXMax={3}
