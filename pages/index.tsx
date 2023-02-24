@@ -56,7 +56,7 @@ const Index: NextPage = () => {
             >
               First Time Quality
             </a>
-            , a SaaS for assembly-line product inspection & analysis.
+            .
           </p>
           <p>
             My personal work includes{' '}
