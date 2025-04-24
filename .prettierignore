@@ -1,0 +1,9 @@
+.parcel-cache
+dist
+node_modules
+.dockerignore
+.gitignore
+Dockerfile
+fly.toml
+output.css
+pnpm-lock.yaml
