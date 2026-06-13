@@ -1,1 +1,161 @@
 @import "tailwindcss";
+
+/* Fonts as theme tokens so `font-serif` / `font-mono` map to the design's faces. */
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+/* Colours are driven by the CSS variables defined below, so the
+   prefers-color-scheme swap is the single source of truth. `inline` makes
+   utilities emit `var(--ink)` directly so the dark overrides cascade. */
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+}
+
+:root {
+  --paper: #f7f7f3;
+  --ink: #1b1b17;
+  --muted: #73726a;
+  --faint: #a3a299;
+  --line: rgba(27, 27, 23, 0.13);
+  --accent: #2e3ad6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #15140f;
+    --ink: #eceae0;
+    --muted: #9c9a8e;
+    --faint: #6e6d63;
+    --line: rgba(236, 234, 224, 0.15);
+    --accent: #9aa2f4;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer base {
+  body {
+    @apply m-0 flex min-h-screen justify-center bg-paper font-serif text-ink antialiased;
+  }
+
+  main {
+    @apply w-full max-w-[34rem];
+    padding: clamp(48px, 14vh, 128px) clamp(24px, 7vw, 40px) 64px;
+  }
+
+  h1 {
+    @apply mb-6 font-normal;
+    font-size: clamp(44px, 11vw, 64px);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+  }
+
+  section {
+    @apply mt-9;
+  }
+
+  a:focus-visible {
+    @apply rounded-[2px];
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  /* Staggered page-load entrance; honours reduced-motion. */
+  @media (prefers-reduced-motion: no-preference) {
+    main > * {
+      animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) backwards;
+    }
+    h1 {
+      animation-delay: 0.05s;
+    }
+    .lede {
+      animation-delay: 0.12s;
+    }
+    section:nth-of-type(1) {
+      animation-delay: 0.19s;
+    }
+    section:nth-of-type(2) {
+      animation-delay: 0.26s;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply mb-3.5 font-mono text-[12px] tracking-[0.12em] text-accent;
+  }
+
+  .lede {
+    @apply mb-11 max-w-[30rem] text-[19px] leading-[1.65];
+  }
+  .lede a {
+    @apply bg-no-repeat pb-px text-ink no-underline;
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 100% 1px;
+    background-position: 0 95%;
+  }
+
+  .label {
+    @apply mb-4 flex items-center gap-2.5 font-mono text-[11px] tracking-[0.14em] text-faint;
+  }
+  .label::after {
+    @apply h-px flex-1 bg-line;
+    content: "";
+  }
+
+  .row {
+    @apply block border-b border-line py-[11px] text-ink no-underline;
+    transition: padding-left 0.18s ease;
+  }
+  .row:hover,
+  .row:focus-visible {
+    @apply pl-2 outline-none;
+  }
+  .row-title {
+    @apply text-[18px];
+  }
+  .arrow {
+    @apply inline-block font-mono text-faint;
+    transition:
+      color 0.18s ease,
+      transform 0.18s ease;
+  }
+  .row:hover .arrow,
+  .row:focus-visible .arrow {
+    @apply text-accent;
+    transform: translate(2px, -2px);
+  }
+  .row-desc {
+    @apply mt-[3px] text-[14px] text-muted;
+  }
+
+  .tokens {
+    @apply flex flex-wrap gap-2.5;
+  }
+  .token {
+    @apply rounded-[7px] border border-line px-[15px] py-2 font-mono text-[13px] text-ink no-underline;
+    transition:
+      border-color 0.18s ease,
+      color 0.18s ease;
+  }
+  .token:hover,
+  .token:focus-visible {
+    @apply border-accent text-accent outline-none;
+  }
+}

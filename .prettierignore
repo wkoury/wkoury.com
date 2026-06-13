@@ -7,3 +7,4 @@ Dockerfile
 fly.toml
 output.css
 pnpm-lock.yaml
+pnpm-workspace.yaml

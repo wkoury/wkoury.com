@@ -2,74 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Will Koury — software engineer." />
     <title>Will Koury</title>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <meta name="description" content="Software engineer Will Koury" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link href="src/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div
-      class="min-h-screen px-4 bg-yellow-100 dark:bg-black dark:text-white flex justify-center items-center"
-    >
-      <div class="max-w-md text-left">
-        <div class="flex items-center mb-4">
-          <h1 class="text-4xl mr-12">Will Koury</h1>
+    <main>
+      <p class="eyebrow">technologist</p>
+      <h1>Will Koury</h1>
+      <p class="lede">
+        I build software at <a href="https://covethealth.io">Covet Health</a>.
+        I'm one of three people shipping
+        <a href="https://ftqapp.com">First Time Quality</a>.
+      </p>
+
+      <section>
+        <p class="label">projects</p>
+        <a class="row" href="https://nycpollen.com">
+          <span class="row-title"
+            >NYC Pollen <span class="arrow">↗</span></span
+          >
+          <div class="row-desc">
+            — Predict how bad your allergies will be today and see the root
+            cause.
+          </div>
+        </a>
+        <a class="row" href="https://github.com/wkoury/tossup-app">
+          <span class="row-title">Tossup <span class="arrow">↗</span></span>
+          <div class="row-desc">— An online buzzer system for quiz bowl.</div>
+        </a>
+        <a class="row" href="https://wkoury.github.io/harvard-admissions/">
+          <span class="row-title"
+            >Harvard Admissions Calculator <span class="arrow">↗</span></span
+          >
+          <div class="row-desc">
+            — See your chances of getting admitted to Harvard, based on data.
+          </div>
+        </a>
+      </section>
+
+      <section>
+        <p class="label">elsewhere</p>
+        <div class="tokens">
+          <a class="token" href="mailto:wkoury@hey.com">email</a>
+          <a class="token" href="https://github.com/wkoury">github</a>
         </div>
-
-        <p class="text-xl mb-2">
-          Software engineer @
-          <a
-            href="https://covethealth.io"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="text-blue-500 hover:underline"
-            >Covet Health</a
-          >.
-        </p>
-
-        <p class="text-xl mb-2">
-          I am on a team of 3 building
-          <a
-            href="https://ftqapp.com"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="text-blue-500 hover:underline"
-            >First Time Quality</a
-          >.
-        </p>
-
-        <p class="text-xl mb-2">
-          My personal work includes
-          <a
-            href="https://github.com/wkoury/tossup-app"
-            class="text-blue-500 hover:underline"
-            rel="noopener noreferrer"
-            target="_blank"
-            >Tossup</a
-          >
-          and the
-          <a
-            href="https://wkoury.github.io/harvard-admissions/"
-            class="text-blue-500 hover:underline"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Harvard Admissions Calculator</a
-          >.
-        </p>
-
-        <div class="flex mt-8 items-center mb-4 space-x-2">
-          <a href="mailto:wkoury@hey.com" class="text-blue-500 hover:underline">
-            Email
-          </a>
-          <a
-            href="https://github.com/wkoury"
-            class="text-blue-500 hover:underline"
-          >
-            Github
-          </a>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
